@@ -1,0 +1,865 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-linear-color: linear-gradient(to right, #72BF44, #006690);
+    --greenish-color: #B2EA64;
+}
+
+body {
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Hamburger */
+.biwatt-mobile-hamburger .line {
+    width: 30px;
+    height: 3px;
+    background-image: var(--main-linear-color);
+    display: block;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.biwatt-mobile-hamburger:hover {
+    cursor: pointer;
+}
+
+#hamburger {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger.is-active {
+    animation: smallbig 0.6s forwards;
+}
+
+@keyframes smallbig {
+
+    0%,
+    100% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+#hamburger.is-active .line:nth-child(1),
+#hamburger.is-active .line:nth-child(2),
+#hamburger.is-active .line:nth-child(3) {
+    -webkit-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+#hamburger.is-active .line:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger.is-active .line:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    -o-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+}
+
+#hamburger.is-active .line:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    -o-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* End Hamburger */
+
+/* Desktop Header */
+
+.biwatt-desktop-header {
+    display: none;
+}
+
+/* End Desktop Header */
+
+/* Mobile Header */
+
+.biwatt-mobile-header {
+    position: relative;
+    height: 10vh;
+}
+
+.biwatt-mobile-header-logo-hamburger {
+    padding: 0 1rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.biwatt-mobile-logo img {
+    width: 75%;
+}
+
+.biwatt-mobile-nav {
+    background-color: #fff;
+    height: 90vh;
+    display: none;
+}
+
+.biwatt-mobile-nav.open {
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.biwatt-mobile-nav-links {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.biwatt-mobile-nav-item {
+    border-top: 1px solid #ddd;
+}
+
+.biwatt-mobile-nav-item:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+.biwatt-mobile-nav-link {
+    display: block;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: #4D5C66;
+}
+
+body.open {
+    overflow: hidden;
+}
+
+/* End Mobile Header */
+
+/* Rent Field */
+.rent-background {
+    background-image: url("../img/rent.background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rent-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+    color: #fff;
+}
+
+.rent-field-header {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.rent-field-box {
+    background-color: rgba(0, 0, 0, .5);
+    padding: 1rem 2rem;
+    border-radius: 2em;
+    margin-bottom: 1rem;
+    width: 80%;
+    max-width: 80%;
+}
+
+.rent-field-box-row {
+    margin-bottom: 1rem;
+}
+
+.rent-field-box-acceptence-return {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.rent-field-box-acceptence-return i {
+    color: var(--greenish-color);
+}
+
+.rent-field-box-location {
+    margin-bottom: .5rem;
+}
+
+.rent-field-box-location input {
+    width: 100%;
+    padding: .5rem;
+    border-radius: 2em;
+}
+
+.rent-field-box-date-box,
+.rent-field-box-time-box {
+    background-color: rgba(0, 55, 46, .5);
+    padding: .5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.rent-field-box-date-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.rent-field-rentbutton {
+    background-color: #fff;
+    padding: .5rem 2rem;
+    border-radius: 2em;
+    text-align: center;
+}
+
+.rent-field-rentbutton-link {
+    text-transform: uppercase;
+    font-weight: 900;
+    background: var(--main-linear-color);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.rent-field-box-location input {
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .5);
+    outline: none;
+    border: none;
+    color: #fff;
+    text-align: center;
+}
+
+.rent-field-box-location input::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.rent-field-box-location input:-ms-input-placeholder {
+    color: #fff;
+}
+
+.rent-field-box-location input::-ms-input-placeholder {
+    color: #fff;
+}
+
+/* End Rent Field */
+
+/* Campaign Field */
+
+.campaign-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+}
+
+.campaign-field-text {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.campaign-field-box {
+    position: relative;
+    margin-bottom: .5rem;
+}
+
+.campaign-field-box h1 {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.campaign-field-box a {
+    position: absolute;
+    display: inline-block;
+    padding: .5rem 1rem;
+    border-radius: 1em;
+    color: #fff;
+    right: 5%;
+    bottom: 10%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    background: var(--main-linear-color);
+}
+
+.campaign-field-more-news {
+    display: inline-block;
+    padding: .5rem 1rem;
+    border-radius: 1em;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    background: var(--main-linear-color);
+}
+
+/* End Campaign Field */
+
+/* How does it work ? */
+
+.how-does-it-work-background {
+    background-color: #F7F9FB;
+}
+
+.how-does-it-work-field {
+    padding: 1.5rem 1rem;
+}
+
+.how-does-it-work-text h1 {
+    text-align: center;
+    color: #0E7188;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.how-does-it-work-text h1 span {
+    font-weight: 900;
+}
+
+.how-does-it-work-step {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.how-does-it-work-number {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(25, 108, 165, 0.3);
+    border-radius: 50%;
+    font-weight: 500;
+    color: #0E7188;
+}
+
+.how-does-it-work-step h3 {
+    color: #0E7188;
+    text-transform: uppercase;
+    margin-bottom: .2rem;
+}
+
+.how-does-it-work-download-now {
+    display: inline-block;
+    padding: .5rem 1rem;
+    width: 100%;
+    border-radius: 1em;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    background: var(--main-linear-color);
+}
+
+.how-does-it-work-img {
+    text-align: center;
+}
+
+/* How does it work ? */
+
+/* Application Field */
+
+.application-background {
+    background-image: linear-gradient(to right, #0F8586, #70BD4A);
+}
+
+.application-field {
+    padding: 1.5rem 1rem;
+}
+
+.application-text {
+    margin-bottom: 1rem;
+}
+
+.application-text h1 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.application-text p {
+    color: #fff;
+}
+
+/* End Application Field */
+
+/* Application Field 2 */
+
+.application-2-field {
+    padding: 1.5rem 1rem;
+}
+
+.application-2-text h1 {
+    color: #04698E;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.application-2-text p {
+    color: #6A6A6A;
+    margin-bottom: 1rem;
+}
+
+.application-2-download-now {
+    display: inline-block;
+    padding: .5rem 1rem;
+    border-radius: 1em;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    background: var(--main-linear-color);
+}
+
+/* End Application Field 2 */
+
+/* Footer */
+
+.footer-background {
+    background-color: #003746;
+    color: #B6C7D7;
+    padding: 1.5rem 1rem;
+}
+
+.footer-background a {
+    color: #B6C7D7;
+}
+
+.footer-background h3 {
+    color: #fff;
+}
+
+.footer-field {
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer-field-biwatt-logo {
+    margin-bottom: 1rem;
+}
+
+.footer-field-biwatt-copyright {
+    margin-top: 1rem;
+}
+
+.footer-field-right {
+    margin-top: 2rem;
+}
+
+.footer-field-right-col {
+    margin-bottom: 1rem;
+}
+
+.footer-field-right-col h3 {
+    margin-bottom: .2rem;
+}
+
+.footer-field-right-col a {
+    margin-right: 1rem;
+}
+
+.footer-field-right-contact-phone {
+    margin-bottom: .5rem;
+}
+
+.footer-field-right-contact-phone,
+.footer-field-right-contact-location {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.footer-field-right-col-call-inquiry {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.footer-field-right-col-call-inquiry a {
+    display: inline-block;
+    padding: .5rem;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 5px;
+}
+
+.footer-field-right-social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-field-right-social-link a {
+    display: inline-block;
+    padding: .3rem;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 5px;
+}
+
+.bottom-footer-field {
+    margin-top: 1.5rem;
+}
+
+.bottom-footer-link {
+    margin-bottom: 1rem;
+}
+
+.footer-field-right-contact-location {
+    text-transform: capitalize;
+}
+
+/* End Footer */
+
+/* Media Queries */
+
+
+@media only screen and (min-width: 1200px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 85%;
+        max-width: 85%;
+        margin: 0 auto;
+    }
+
+    .rent-field {
+        padding: 8rem 0;
+    }
+
+    .rent-field-header {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .rent-field-box {
+        position: relative;
+    }
+
+    .rent-field-rentbutton {
+        position: absolute;
+        right: 0;
+        bottom: -30%;
+        font-size: 1.2rem;
+    }
+
+    .biwatt-mobile-header {
+        display: none;
+    }
+
+    .biwatt-desktop-header {
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3rem;
+    }
+
+    .biwatt-desktop-nav-links {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .biwatt-mobile-nav-link {
+        font-weight: 500;
+    }
+
+    .biwatt-desktop-nav-link-download {
+        display: inline-block;
+        padding: .5rem 1rem;
+        border-radius: 1em;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        background: var(--main-linear-color);
+    }
+
+    .campaign-field-boxes-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .campaign-field-text {
+        margin-bottom: 2rem;
+    }
+
+    .campaign-field-more-news {
+        margin-top: 2rem;
+    }
+
+    .how-does-it-work-field,
+    .application-field,
+    .application-2-field {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .how-does-it-work-number {
+        width: 35px;
+        height: 35px;
+        left: -2%;
+        font-size: 2rem;
+    }
+
+    .application-text h1 {
+        font-size: 3rem;
+        text-align: initial;
+        margin-bottom: 2rem;
+    }
+
+    .application-text,
+    .application-img {
+        width: 50%;
+    }
+
+    .application-text p {
+        font-size: 1.5rem;
+    }
+
+    .application-2-text h1 {
+        font-size: 4rem;
+        text-align: initial;
+    }
+
+    .application-2-img,
+    .application-2-text {
+        width: 50%;
+    }
+
+    .how-does-it-work-img,
+    .how-does-it-work-text {
+        width: 50%;
+    }
+
+    .how-does-it-work-text h1 {
+        text-align: initial;
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .how-does-it-work-download-now {
+        width: initial;
+    }
+
+    .how-does-it-work-field,
+    .application-field {
+        padding: 6rem 0;
+    }
+
+    .application-2-text p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-field {
+        display: flex;
+        gap: 5rem;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 0;
+    }
+
+    .footer-field-biwatt-text {
+        width: 50%;
+    }
+
+    .footer-field-biwatt-logo img {
+        width: 30%;
+    }
+
+    .footer-field-right {
+        display: flex;
+        gap: 2.5rem;
+        margin-top: initial;
+    }
+
+    .footer-field-right-col h3 {
+        margin-bottom: 1rem;
+    }
+
+    .footer-field-right-col {
+        width: 50%;
+    }
+
+    .footer-field-right-col a {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .footer-field-right-col-call-inquiry {
+        display: initial;
+    }
+
+    .footer-field-right-col-call-inquiry a {
+        text-align: center;
+    }
+
+    .footer-field-right-social-links {
+        justify-content: space-between;
+    }
+
+    .footer-field-right-social-link a {
+        font-size: 1.2rem;
+    }
+
+    .bottom-footer-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0 0 0;
+    }
+
+    .bottom-footer-link {
+        margin-bottom: initial;
+    }
+
+    .bottom-footer-link a {
+        color: rgba(255, 255, 255, .3);
+        text-transform: uppercase;
+    }
+
+    .rent-field-box-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+
+    .rent-field-box-acceptence-return i {
+        font-size: 1.5rem;
+    }
+
+    .rent-field-box-location {
+        margin-bottom: initial;
+        width: 100%;
+    }
+
+    .rent-field-box {
+        width: initial;
+        max-width: initial;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .campaign-field-boxes-row {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .campaign-field-box {
+        width: 24%;
+    }
+
+    .campaign-field-more-news {
+        margin-top: 1rem;
+    }
+
+    .application-text h1 {
+        text-align: initial;
+        font-size: 1.5rem;
+    }
+
+    .application-2-text h1 {
+        font-size: 1.5rem;
+        text-align: initial;
+    }
+
+    .how-does-it-work-field,
+    .application-field,
+    .application-2-field {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .campaign-field-boxes-row {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .campaign-field-more-news {
+        margin-top: 1rem;
+    }
+
+    .application-2-img,
+    .application-img,
+    .how-does-it-work-img {
+        text-align: center;
+    }
+
+    .application-2-img img,
+    .application-img img,
+    .how-does-it-work-img img {
+        width: 50%;
+    }
+}
+
+/* End Media Queries */
