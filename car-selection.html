@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Biwatt</title>
+</head>
+
+<body>
+
+    <!-- Desktop Header -->
+    <header class="biwatt-desktop-header">
+        <div class="biwatt-desktop-logo">
+            <img src="img/biwatt.logo.svg" alt="biwatt logo">
+        </div>
+        <nav class="biwatt-desktop-nav">
+            <ul class="biwatt-desktop-nav-links">
+                <li class="biwatt-desktop-nav-item">
+                    <a href="#" class="biwatt-mobile-nav-link">Nedir ?</a>
+                </li>
+                <li class="biwatt-desktop-nav-item">
+                    <a href="#" class="biwatt-mobile-nav-link">Hakkımızda</a>
+                </li>
+                <li class="biwatt-desktop-nav-item">
+                    <a href="#" class="biwatt-mobile-nav-link">Sss</a>
+                </li>
+                <li class="biwatt-desktop-nav-item">
+                    <a href="#" class="biwatt-desktop-nav-link-download biwatt-mobile-nav-link">İndir</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End Desktop Header -->
+
+    <!-- Mobile Header -->
+    <header class="biwatt-mobile-header">
+        <div class="biwatt-mobile-header-logo-hamburger">
+            <div class="biwatt-mobile-logo">
+                <img src="img/biwatt.logo.svg" alt="biwatt logo">
+            </div>
+            <div class="biwatt-mobile-hamburger" id="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+        <nav class="biwatt-mobile-nav">
+            <ul class="biwatt-mobile-nav-links">
+                <li class="biwatt-mobile-nav-item">
+                    <a href="#" class="biwatt-mobile-nav-link">Nedir ?</a>
+                </li>
+                <li class="biwatt-mobile-nav-item">
+                    <a href="#" class="biwatt-mobile-nav-link">Hakkımızda</a>
+                </li>
+                <li class="biwatt-mobile-nav-item">
+                    <a href="#" class="biwatt-mobile-nav-link">Sss</a>
+                </li>
+                <li class="biwatt-mobile-nav-item">
+                    <a href="#" class="biwatt-mobile-nav-link-download biwatt-mobile-nav-link">İndir</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End Modile Header -->
+
+    <!-- Car Selection -->
+    <section class="car-selection-steps-and-filters">
+        <div class="car-selection-steps">
+            <div class="container">
+                <div class="car-selection-steps-boxes">
+                    <div class="car-selection-steps-box step-1">
+                        <h3 class="car-selection-steps-name">1 - Tarih Seç</h3>
+                        <div class="car-selection-steps-bar-and-arrow">
+                            <span class="car-selection-steps-bar"></span>
+                            <i class="fa-solid fa-caret-right car-selection-steps-arrow"></i>
+                        </div>
+                    </div>
+                    <div class="car-selection-steps-box step-2">
+                        <h3 class="car-selection-steps-name">2 - Araç Seç</h3>
+                        <div class="car-selection-steps-bar-and-arrow">
+                            <span class="car-selection-steps-bar"></span>
+                            <i class="fa-solid fa-caret-right car-selection-steps-arrow"></i>
+                        </div>
+                    </div>
+                    <div class="car-selection-steps-box step-3">
+                        <h3 class="car-selection-steps-name">3 - Ekstraları Seçin</h3>
+                        <div class="car-selection-steps-bar-and-arrow">
+                            <span class="car-selection-steps-bar"></span>
+                            <i class="fa-solid fa-caret-right car-selection-steps-arrow"></i>
+                        </div>
+                    </div>
+                    <div class="car-selection-steps-box step-4">
+                        <h3 class="car-selection-steps-name">4 - Gözden Geçir Ve Öde</h3>
+                        <div class="car-selection-steps-bar-and-arrow">
+                            <span class="car-selection-steps-bar"></span>
+                            <i class="fa-solid fa-caret-right car-selection-steps-arrow"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="car-selection-filters">
+            <div class="container">
+                <div class="car-selection-filters-boxes">
+                    <div class="car-selection-filters-box">
+                        <h4 class="car-selection-filters-name">Vites</h4>
+                        <div class="car-selection-filter-checkboxs">
+                            <div class="car-selection-filter-checkbox">
+                                <input type="checkbox" name="" id="manual">
+                                <label for="manual">Manuel</label>
+                            </div>
+                            <div class="car-selection-filter-checkbox">
+                                <input type="checkbox" name="" id="automatic">
+                                <label for="automatic">Otomatik</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-selection-filters-box">
+                        <h4 class="car-selection-filters-name">Kasa</h4>
+                        <div class="car-selection-filter-checkboxs">
+                            <div class="car-selection-filter-checkbox">
+                                <input type="checkbox" name="" id="sedan">
+                                <label for="sedan">Sedan</label>
+                            </div>
+                            <div class="car-selection-filter-checkbox">
+                                <input type="checkbox" name="" id="hatchbak">
+                                <label for="hatchbak">Hatchbak</label>
+                            </div>
+                            <div class="car-selection-filter-checkbox">
+                                <input type="checkbox" name="" id="suv">
+                                <label for="suv">SUV</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-selection-filters-box">
+                        <h4 class="car-selection-filters-name">Sınıf</h4>
+                        <div class="car-selection-filters-select">
+                            <form action="">
+                                <select name="">
+                                    <option value="economic">Ekonomi</option>
+                                    <option value="economic">Ekonomi</option>
+                                    <option value="economic">Ekonomi</option>
+                                    <option value="economic">Ekonomi</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="car-selection-filters-box">
+                        <h4 class="car-selection-filters-name">Markalar</h4>
+                        <div class="car-selection-filters-select">
+                            <form action="">
+                                <select name="">
+                                    <option value="all-brands">Tüm Markalar</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                    <option value="bmw">BMW</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="car-selection-filters-filter-button">
+                        <a href="#">Filtrele</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Car Selection -->
+
+    <!-- Car Features -->
+
+    <section class="car-features-section">
+        <div class="container">
+            <div class="car-features">
+                <h1 class="car-features-similar-car-name">Fiat Egea HB veya Benzeri</h1>
+                <div class="car-features-row">
+                    <div class="car-features-col">
+                        <img src="img/otomobil.png" alt="" class="car-features-car-img">
+                    </div>
+                    <div class="car-features-col">
+                        <h3 class="car-features-car-name">Renault zoe mjet II ds 95 hp</h3>
+                        <div class="car-features-car-properties">
+                            <div class="car-features-car-properties-col">
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-star fa-fw"></i>
+                                    <span>Economic</span>
+                                </div>
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-user fa-fw"></i>
+                                    <span>5 People</span>
+                                </div>
+                                <div class="car-features-car-property">
+                                    <i class="fa-solid fa-door-open fa-fw"></i>
+                                    <span>5 Door</span>
+                                </div>
+                            </div>
+                            <div class="car-features-car-properties-col">
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-star fa-fw"></i>
+                                    <span>Manuel</span>
+                                </div>
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-snowflake fa-fw"></i>
+                                    <span>A/C</span>
+                                </div>
+
+                                <div class="car-features-car-property">
+                                    <i class="fa-solid fa-suitcase-rolling fa-fw"></i>
+                                    <span>3 Luggage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-features-col">
+                        <div class="car-features-price-boxes">
+                            <div class="car-features-price-box">
+                                <h4 class="car-features-price-box-name">Ofiste Öde</h4>
+                                <h4 class="car-features-price">₺ 1892,07</h4>
+                            </div>
+                            <div class="car-features-price-box">
+                                <h4 class="car-features-price-box-name">Şimdi Öde</h4>
+                                <h4 class="car-features-price">₺ 1324,45</h4>
+                            </div>
+                            <div class="car-features-price-box">
+                                <div class="car-feature-profit">
+                                    <h4>Kazancınız<br>₺ 567,62</h4>
+                                </div>
+                            </div>
+                            <div class="car-features-price-box">
+                                <div class="car-feature-arrow">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="car-features">
+                <h1 class="car-features-similar-car-name">Fiat Egea HB veya Benzeri</h1>
+                <div class="car-features-row">
+                    <div class="car-features-col">
+                        <img src="img/otomobil.png" alt="" class="car-features-car-img">
+                    </div>
+                    <div class="car-features-col">
+                        <h3 class="car-features-car-name">Renault zoe mjet II ds 95 hp</h3>
+                        <div class="car-features-car-properties">
+                            <div class="car-features-car-properties-col">
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-star fa-fw"></i>
+                                    <span>Economic</span>
+                                </div>
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-user fa-fw"></i>
+                                    <span>5 People</span>
+                                </div>
+                                <div class="car-features-car-property">
+                                    <i class="fa-solid fa-door-open fa-fw"></i>
+                                    <span>5 Door</span>
+                                </div>
+                            </div>
+                            <div class="car-features-car-properties-col">
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-star fa-fw"></i>
+                                    <span>Manuel</span>
+                                </div>
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-snowflake fa-fw"></i>
+                                    <span>A/C</span>
+                                </div>
+
+                                <div class="car-features-car-property">
+                                    <i class="fa-solid fa-suitcase-rolling fa-fw"></i>
+                                    <span>3 Luggage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-features-col">
+                        <div class="car-features-price-boxes">
+                            <div class="car-features-price-box">
+                                <h4 class="car-features-price-box-name">Ofiste Öde</h4>
+                                <h4 class="car-features-price">₺ 1892,07</h4>
+                            </div>
+                            <div class="car-features-price-box">
+                                <h4 class="car-features-price-box-name">Şimdi Öde</h4>
+                                <h4 class="car-features-price">₺ 1324,45</h4>
+                            </div>
+                            <div class="car-features-price-box">
+                                <div class="car-feature-profit">
+                                    <h4>Kazancınız<br>₺ 567,62</h4>
+                                </div>
+                            </div>
+                            <div class="car-features-price-box">
+                                <div class="car-feature-arrow">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="car-features">
+                <h1 class="car-features-similar-car-name">Fiat Egea HB veya Benzeri</h1>
+                <div class="car-features-row">
+                    <div class="car-features-col">
+                        <img src="img/otomobil.png" alt="" class="car-features-car-img">
+                    </div>
+                    <div class="car-features-col">
+                        <h3 class="car-features-car-name">Renault zoe mjet II ds 95 hp</h3>
+                        <div class="car-features-car-properties">
+                            <div class="car-features-car-properties-col">
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-star fa-fw"></i>
+                                    <span>Economic</span>
+                                </div>
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-user fa-fw"></i>
+                                    <span>5 People</span>
+                                </div>
+                                <div class="car-features-car-property">
+                                    <i class="fa-solid fa-door-open fa-fw"></i>
+                                    <span>5 Door</span>
+                                </div>
+                            </div>
+                            <div class="car-features-car-properties-col">
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-star fa-fw"></i>
+                                    <span>Manuel</span>
+                                </div>
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-snowflake fa-fw"></i>
+                                    <span>A/C</span>
+                                </div>
+
+                                <div class="car-features-car-property">
+                                    <i class="fa-solid fa-suitcase-rolling fa-fw"></i>
+                                    <span>3 Luggage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-features-col">
+                        <div class="car-features-price-boxes">
+                            <div class="car-features-price-box">
+                                <h4 class="car-features-price-box-name">Ofiste Öde</h4>
+                                <h4 class="car-features-price">₺ 1892,07</h4>
+                            </div>
+                            <div class="car-features-price-box">
+                                <h4 class="car-features-price-box-name">Şimdi Öde</h4>
+                                <h4 class="car-features-price">₺ 1324,45</h4>
+                            </div>
+                            <div class="car-features-price-box">
+                                <div class="car-feature-profit">
+                                    <h4>Kazancınız<br>₺ 567,62</h4>
+                                </div>
+                            </div>
+                            <div class="car-features-price-box">
+                                <div class="car-feature-arrow">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="car-features">
+                <h1 class="car-features-similar-car-name">Fiat Egea HB veya Benzeri</h1>
+                <div class="car-features-row">
+                    <div class="car-features-col">
+                        <img src="img/otomobil.png" alt="" class="car-features-car-img">
+                    </div>
+                    <div class="car-features-col">
+                        <h3 class="car-features-car-name">Renault zoe mjet II ds 95 hp</h3>
+                        <div class="car-features-car-properties">
+                            <div class="car-features-car-properties-col">
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-star fa-fw"></i>
+                                    <span>Economic</span>
+                                </div>
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-user fa-fw"></i>
+                                    <span>5 People</span>
+                                </div>
+                                <div class="car-features-car-property">
+                                    <i class="fa-solid fa-door-open fa-fw"></i>
+                                    <span>5 Door</span>
+                                </div>
+                            </div>
+                            <div class="car-features-car-properties-col">
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-star fa-fw"></i>
+                                    <span>Manuel</span>
+                                </div>
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-snowflake fa-fw"></i>
+                                    <span>A/C</span>
+                                </div>
+
+                                <div class="car-features-car-property">
+                                    <i class="fa-solid fa-suitcase-rolling fa-fw"></i>
+                                    <span>3 Luggage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-features-col">
+                        <div class="car-features-price-boxes">
+                            <div class="car-features-price-box">
+                                <h4 class="car-features-price-box-name">Ofiste Öde</h4>
+                                <h4 class="car-features-price">₺ 1892,07</h4>
+                            </div>
+                            <div class="car-features-price-box">
+                                <h4 class="car-features-price-box-name">Şimdi Öde</h4>
+                                <h4 class="car-features-price">₺ 1324,45</h4>
+                            </div>
+                            <div class="car-features-price-box">
+                                <div class="car-feature-profit">
+                                    <h4>Kazancınız<br>₺ 567,62</h4>
+                                </div>
+                            </div>
+                            <div class="car-features-price-box">
+                                <div class="car-feature-arrow">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="car-features">
+                <h1 class="car-features-similar-car-name">Fiat Egea HB veya Benzeri</h1>
+                <div class="car-features-row">
+                    <div class="car-features-col">
+                        <img src="img/otomobil.png" alt="" class="car-features-car-img">
+                    </div>
+                    <div class="car-features-col">
+                        <h3 class="car-features-car-name">Renault zoe mjet II ds 95 hp</h3>
+                        <div class="car-features-car-properties">
+                            <div class="car-features-car-properties-col">
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-star fa-fw"></i>
+                                    <span>Economic</span>
+                                </div>
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-user fa-fw"></i>
+                                    <span>5 People</span>
+                                </div>
+                                <div class="car-features-car-property">
+                                    <i class="fa-solid fa-door-open fa-fw"></i>
+                                    <span>5 Door</span>
+                                </div>
+                            </div>
+                            <div class="car-features-car-properties-col">
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-star fa-fw"></i>
+                                    <span>Manuel</span>
+                                </div>
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-snowflake fa-fw"></i>
+                                    <span>A/C</span>
+                                </div>
+
+                                <div class="car-features-car-property">
+                                    <i class="fa-solid fa-suitcase-rolling fa-fw"></i>
+                                    <span>3 Luggage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-features-col">
+                        <div class="car-features-price-boxes">
+                            <div class="car-features-price-box">
+                                <h4 class="car-features-price-box-name">Ofiste Öde</h4>
+                                <h4 class="car-features-price">₺ 1892,07</h4>
+                            </div>
+                            <div class="car-features-price-box">
+                                <h4 class="car-features-price-box-name">Şimdi Öde</h4>
+                                <h4 class="car-features-price">₺ 1324,45</h4>
+                            </div>
+                            <div class="car-features-price-box">
+                                <div class="car-feature-profit">
+                                    <h4>Kazancınız<br>₺ 567,62</h4>
+                                </div>
+                            </div>
+                            <div class="car-features-price-box">
+                                <div class="car-feature-arrow">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="car-features">
+                <h1 class="car-features-similar-car-name">Fiat Egea HB veya Benzeri</h1>
+                <div class="car-features-row">
+                    <div class="car-features-col">
+                        <img src="img/otomobil.png" alt="" class="car-features-car-img">
+                    </div>
+                    <div class="car-features-col">
+                        <h3 class="car-features-car-name">Renault zoe mjet II ds 95 hp</h3>
+                        <div class="car-features-car-properties">
+                            <div class="car-features-car-properties-col">
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-star fa-fw"></i>
+                                    <span>Economic</span>
+                                </div>
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-user fa-fw"></i>
+                                    <span>5 People</span>
+                                </div>
+                                <div class="car-features-car-property">
+                                    <i class="fa-solid fa-door-open fa-fw"></i>
+                                    <span>5 Door</span>
+                                </div>
+                            </div>
+                            <div class="car-features-car-properties-col">
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-star fa-fw"></i>
+                                    <span>Manuel</span>
+                                </div>
+                                <div class="car-features-car-property">
+                                    <i class="fa-regular fa-snowflake fa-fw"></i>
+                                    <span>A/C</span>
+                                </div>
+
+                                <div class="car-features-car-property">
+                                    <i class="fa-solid fa-suitcase-rolling fa-fw"></i>
+                                    <span>3 Luggage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-features-col">
+                        <div class="car-features-price-boxes">
+                            <div class="car-features-price-box">
+                                <h4 class="car-features-price-box-name">Ofiste Öde</h4>
+                                <h4 class="car-features-price">₺ 1892,07</h4>
+                            </div>
+                            <div class="car-features-price-box">
+                                <h4 class="car-features-price-box-name">Şimdi Öde</h4>
+                                <h4 class="car-features-price">₺ 1324,45</h4>
+                            </div>
+                            <div class="car-features-price-box">
+                                <div class="car-feature-profit">
+                                    <h4>Kazancınız<br>₺ 567,62</h4>
+                                </div>
+                            </div>
+                            <div class="car-features-price-box">
+                                <div class="car-feature-arrow">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Car Features -->
+
+    <!-- Footer -->
+    <div class="footer-background">
+        <div class="footer-field container">
+            <div class="footer-field-left">
+                <div class="footer-field-biwatt-logo">
+                    <img src="img/biwatt.logo.svg" alt="Biwatt Logo">
+                </div>
+                <p class="footer-field-biwatt-text">
+                    Biwatt, sadece elektrikli araçlar sunarak çevreye duyarlı sürüş deneyimi sağlar. Sıfır emisyonlu
+                    araçlarla şehirde hareket ederek çevreyi koruma fırsatı sunar.
+                </p>
+                <p class="footer-field-biwatt-copyright">biwatt &copy; 2023</p>
+            </div>
+            <div class="footer-field-right">
+                <div class="footer-field-right-col">
+                    <h3>Biwatt</h3>
+                    <a href="#">Nasıl Çalışır?</a>
+                    <a href="#">Neden Biz?</a>
+                </div>
+                <div class="footer-field-right-col">
+                    <h3>Genel Müdürlük</h3>
+                    <ul class="footer-field-right-contact">
+                        <li class="footer-field-right-contact-phone">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:02163798282">0216 379 82 82</a>
+                        </li>
+                        <li class="footer-field-right-contact-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>BiWatt orta mahallesi ankara caddesi no:2/1 e-5 kavşağı metro çıkışı karşısı tunalar
+                                plaza pendik / istanbul</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-field-right-col">
+                    <div class="footer-field-right-col-call-inquiry">
+                        <a href="#">Schedule a call</a>
+                        <a href="#">Submit an Inquiry</a>
+                    </div>
+                    <ul class="footer-field-right-social-links">
+                        <li class="footer-field-right-social-link">
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="footer-field-right-social-link">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="footer-field-right-social-link">
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="footer-field-right-social-link">
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="footer-field-right-social-link">
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer-field container">
+            <ul class="bottom-footer-links">
+                <li class="bottom-footer-link">
+                    <a href="#">Kurumsal</a>
+                </li>
+                <li class="bottom-footer-link">
+                    <a href="#">Elektrikli araçlar</a>
+                </li>
+                <li class="bottom-footer-link">
+                    <a href="#">Çözümler</a>
+                </li>
+                <li class="bottom-footer-link">
+                    <a href="#">Sıkça sorulan sorular</a>
+                </li>
+                <li class="bottom-footer-link">
+                    <a href="#">İletişim</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Footer -->
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
