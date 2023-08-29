@@ -17,6 +17,7 @@ body {
 }
 
 img {
+    width: 100%;
     max-width: 100%;
 }
 
@@ -146,7 +147,7 @@ h6 {
     display: block;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 999;
 }
 
 .biwatt-mobile-nav-links {
@@ -711,6 +712,100 @@ body.open {
 
 /* End Car Features */
 
+/* Blog Page */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: initial;
+    left: initial;
+    right: 10%;
+    bottom: 5%;
+}
+
+:root {
+    --swiper-theme-color: #fff;
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
+    width: 8px;
+    height: 8px;
+    opacity: initial;
+    border: 1px solid #fff;
+    background: transparent;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: initial;
+    background: #fff;
+}
+
+.blog-page-slider-text {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30%;
+    color: #fff;
+}
+
+.blog-page-slider-text h1 {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-size: .4rem;
+}
+
+.blog-page-slider-text a {
+    display: inline-block;
+    color: #3C9B8F;
+    background-color: #fff;
+    padding: .5em 1em;
+    border-radius: 1em;
+    text-transform: uppercase;
+    font-size: .2rem;
+}
+
+.blog-page-content {
+    padding: 1.5rem 1rem;
+}
+
+.blog-page-box {
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 5px 10px 0px;
+}
+
+.blog-page-box:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.blog-page-box-text {
+    padding: .5rem;
+    text-transform: capitalize;
+}
+
+/* End Blog Page */
+
 /* Footer */
 
 .footer-background {
@@ -808,6 +903,128 @@ body.open {
 
 /* Media Queries */
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .campaign-field-boxes-row {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .campaign-field-box {
+        width: 24%;
+    }
+
+    .campaign-field-more-news {
+        margin-top: 1rem;
+    }
+
+    .application-text h1 {
+        text-align: initial;
+        font-size: 1.5rem;
+    }
+
+    .application-2-text h1 {
+        font-size: 1.5rem;
+        text-align: initial;
+    }
+
+    .how-does-it-work-field,
+    .application-field,
+    .application-2-field {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .campaign-field-boxes-row {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .campaign-field-more-news {
+        margin-top: 1rem;
+    }
+
+    .application-2-img,
+    .application-img,
+    .how-does-it-work-img {
+        text-align: center;
+    }
+
+    .application-2-img img,
+    .application-img img,
+    .how-does-it-work-img img {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .car-selection-steps-boxes {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .car-selection-steps-box {
+        flex-grow: 1;
+    }
+
+    .car-selection-steps-box:not(:last-child) {
+        margin-bottom: initial;
+    }
+
+    .car-selection-filters-boxes {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .car-selection-filters-box:not(:last-child) {
+        margin-bottom: initial;
+        flex-grow: 1;
+    }
+
+    .car-selection-filters-filter-button {
+        align-self: center;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        right: 20%;
+    }
+
+    .blog-page-slider-text h1 {
+        font-size: 1rem;
+    }
+
+    .blog-page-slider-text a {
+        font-size: .5rem;
+    }
+
+    .blog-page-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .blog-page-box {
+        flex: 0 0 auto;
+        width: calc(50% - 1rem);
+    }
+
+    .blog-page-box:not(:last-child) {
+        margin-bottom: initial;
+    }
+
+    .swiper-pagination-bullet {
+        border-width: 3px;
+    }
+}
 
 @media only screen and (min-width: 1200px) {
 
@@ -1102,93 +1319,36 @@ body.open {
     .car-selection-steps-arrow {
         font-size: 1.2rem;
     }
-}
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .campaign-field-boxes-row {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        right: 25%;
     }
 
-    .campaign-field-box {
-        width: 24%;
+    .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
     }
 
-    .campaign-field-more-news {
-        margin-top: 1rem;
+    .blog-page-slider-text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
     }
 
-    .application-text h1 {
-        text-align: initial;
-        font-size: 1.5rem;
+    .blog-page-slider-text a {
+        font-size: 1rem;
     }
 
-    .application-2-text h1 {
-        font-size: 1.5rem;
-        text-align: initial;
+    .blog-page-boxes {
+        gap: 2rem;
     }
 
-    .how-does-it-work-field,
-    .application-field,
-    .application-2-field {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-
-    .campaign-field-boxes-row {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+    .blog-page-box {
+        width: calc(50% - 2rem);
     }
 
-    .campaign-field-more-news {
-        margin-top: 1rem;
-    }
-
-    .application-2-img,
-    .application-img,
-    .how-does-it-work-img {
-        text-align: center;
-    }
-
-    .application-2-img img,
-    .application-img img,
-    .how-does-it-work-img img {
-        width: 50%;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .car-selection-steps-boxes {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        align-items: center;
-    }
-
-    .car-selection-steps-box:not(:last-child) {
-        margin-bottom: initial;
-        flex-grow: 1;
-    }
-
-    .car-selection-filters-boxes {
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
-    }
-
-    .car-selection-filters-box:not(:last-child) {
-        margin-bottom: initial;
-        flex-grow: 1;
-    }
-
-    .car-selection-filters-filter-button {
-        align-self: center;
+    .blog-page-box-text {
+        padding: 1rem;
     }
 }
 

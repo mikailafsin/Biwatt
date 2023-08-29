@@ -21,3 +21,19 @@ toggleButton.addEventListener('click', () => {
     menu.classList.toggle('open');
     body.classList.toggle('open');
 });
+
+// Swiper
+var swiper = new Swiper(".mySwiper", {
+    keyboard: {
+        enabled: true,
+    },
+    mousewheel: true,
+    // autoplay: {
+    //     delay: 3500,
+    //     disableOnInteraction: false,
+    // },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
