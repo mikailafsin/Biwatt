@@ -804,6 +804,18 @@ body.open {
     text-transform: capitalize;
 }
 
+.blog-page-show-more-button {
+    margin-top: 1.5rem;
+    display: block;
+    width: fit-content;
+    margin-inline: auto;
+    padding: .5rem 1rem;
+    background: var(--main-linear-color);
+    color: #fff;
+    border-radius: 1em;
+    text-transform: capitalize;
+}
+
 /* End Blog Page */
 
 /* Footer */
