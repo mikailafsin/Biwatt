@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Biwatt</title>
+</head>
+
+<body>
+
+    <!-- Desktop Header -->
+    <header class="biwatt-desktop-header">
+        <div class="biwatt-desktop-logo">
+            <img src="img/biwatt.logo.svg" alt="biwatt logo">
+        </div>
+        <nav class="biwatt-desktop-nav">
+            <ul class="biwatt-desktop-nav-links">
+                <li class="biwatt-desktop-nav-item">
+                    <a href="#" class="biwatt-mobile-nav-link">Nedir ?</a>
+                </li>
+                <li class="biwatt-desktop-nav-item">
+                    <a href="#" class="biwatt-mobile-nav-link">Hakkımızda</a>
+                </li>
+                <li class="biwatt-desktop-nav-item">
+                    <a href="#" class="biwatt-mobile-nav-link">Sss</a>
+                </li>
+                <li class="biwatt-desktop-nav-item">
+                    <a href="#" class="biwatt-desktop-nav-link-download biwatt-mobile-nav-link">İndir</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End Desktop Header -->
+
+    <!-- Mobile Header -->
+    <header class="biwatt-mobile-header">
+        <div class="biwatt-mobile-header-logo-hamburger">
+            <div class="biwatt-mobile-logo">
+                <img src="img/biwatt.logo.svg" alt="biwatt logo">
+            </div>
+            <div class="biwatt-mobile-hamburger" id="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+        <nav class="biwatt-mobile-nav">
+            <ul class="biwatt-mobile-nav-links">
+                <li class="biwatt-mobile-nav-item">
+                    <a href="#" class="biwatt-mobile-nav-link">Nedir ?</a>
+                </li>
+                <li class="biwatt-mobile-nav-item">
+                    <a href="#" class="biwatt-mobile-nav-link">Hakkımızda</a>
+                </li>
+                <li class="biwatt-mobile-nav-item">
+                    <a href="#" class="biwatt-mobile-nav-link">Sss</a>
+                </li>
+                <li class="biwatt-mobile-nav-item">
+                    <a href="#" class="biwatt-mobile-nav-link-download biwatt-mobile-nav-link">İndir</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End Modile Header -->
+
+    <!-- Car Selection -->
+
+    <div class="car-selection-steps">
+        <div class="container">
+            <div class="car-selection-steps-boxes">
+                <div class="car-selection-steps-box step-1">
+                    <h3 class="car-selection-steps-name">1 - Tarih Seç</h3>
+                    <div class="car-selection-steps-bar-and-arrow">
+                        <span class="car-selection-steps-bar"></span>
+                        <i class="fa-solid fa-caret-right car-selection-steps-arrow"></i>
+                    </div>
+                </div>
+                <div class="car-selection-steps-box step-2">
+                    <h3 class="car-selection-steps-name">2 - Araç Seç</h3>
+                    <div class="car-selection-steps-bar-and-arrow">
+                        <span class="car-selection-steps-bar"></span>
+                        <i class="fa-solid fa-caret-right car-selection-steps-arrow"></i>
+                    </div>
+                </div>
+                <div class="car-selection-steps-box step-3">
+                    <h3 class="car-selection-steps-name">3 - Ekstraları Seçin</h3>
+                    <div class="car-selection-steps-bar-and-arrow">
+                        <span class="car-selection-steps-bar"></span>
+                        <i class="fa-solid fa-caret-right car-selection-steps-arrow"></i>
+                    </div>
+                </div>
+                <div class="car-selection-steps-box step-4">
+                    <h3 class="car-selection-steps-name">4 - Gözden Geçir Ve Öde</h3>
+                    <div class="car-selection-steps-bar-and-arrow">
+                        <span class="car-selection-steps-bar"></span>
+                        <i class="fa-solid fa-caret-right car-selection-steps-arrow"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Car Selection -->
+
+    <!-- Payment -->
+    <div class="payment">
+        <div class="payment-left">
+            <div class="driver-info">
+                <h1 class="info-header">Sürücü Bilgileri</h1>
+                <div class="driver-info-nationality">
+                    <h3>Uyruk*</h3>
+                    <div class="driver-info-nationality-radio-button">
+                        <div class="driver-info-nationality-radio-button-tc">
+                            <input type="radio" name="" id="">
+                            <label for="">T.C.</label>
+                        </div>
+                        <div class="driver-info-nationality-radio-button-tc">
+                            <input type="radio" name="" id="">
+                            <label for="">Diğer</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="driver-info-tc-no">
+                    <h3>T.C. Kimlik No</h3>
+                    <div class="driver-info-tc-box">
+                        <input type="text" name="" id="" placeholder="T.C. Kimlik No">
+                    </div>
+                </div>
+                <div class="driver-info-name-surname">
+                    <div class="driver-info-name">
+                        <h3>Ad*</h3>
+                        <input type="text" name="" id="" placeholder="Ad">
+                    </div>
+                    <div class="driver-info-surname">
+                        <h3>Soyad*</h3>
+                        <input type="text" name="" id="" placeholder="Soyad">
+                    </div>
+                </div>
+                <div class="driver-info-email-phoneno-birthdate">
+                    <div class="driver-info-email">
+                        <h3>Eposta Adresi*</h3>
+                        <input type="text" name="" id="" placeholder="Eposta Adresi">
+                    </div>
+                    <div class="driver-info-phoneno">
+                        <h3>Telefon Numarası*</h3>
+                        <input type="text" name="" id="" placeholder="Telefon Numarası">
+                    </div>
+                    <div class="driver-info-birthdate">
+                        <h3>Doğum Tarihi*</h3>
+                        <input type="text" name="" id="" placeholder="dd/mm/yy">
+                    </div>
+                </div>
+                <div class="driver-info-address">
+                    <h3>Adres*</h3>
+                    <input type="text" name="" id="" placeholder="Adres">
+                </div>
+                <div class="driver-info-country-city">
+                    <div class="driver-info-country">
+                        <h3>Ülke*</h3>
+                        <form action="">
+                            <select name="" id="">
+                                <option value="Türkiye">Türkiye</option>
+                                <option value="ABD">Amerika Birleşik Devletleri</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="driver-info-city">
+                        <h3>Şehir*</h3>
+                        <form action="">
+                            <select name="" id="">
+                                <option value="Istanbul">İstanbul</option>
+                                <option value="Ankara">Ankara</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="drive-info">
+                <h1 class="info-header">Sürüş Bilgileriniz</h1>
+                <div class="driver-info-trip-no">
+                    <h3>Seyahat No</h3>
+                    <input type="text" name="" id="" placeholder="Seyahat No">
+                </div>
+                <div class="driver-info-exp">
+                    <h3>Açıklama</h3>
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Açıklama"></textarea>
+                </div>
+            </div>
+            <div class="payment-info">
+                <h1 class="info-header">Ödeme Bilgileri</h1>
+                <div class="payment-info-namesurname-ccv">
+                    <div class="payment-info-namesurname">
+                        <h3>Ad Soyad*</h3>
+                        <input type="text" name="" id="" placeholder="Ad Soyad">
+                    </div>
+                    <div class="payment-info-ccv">
+                        <h3>CVV*</h3>
+                        <input type="text" name="" id="" placeholder="CVV">
+                    </div>
+                </div>
+                <div class="payment-info-card-number">
+                    <h3>Kart Numarası*</h3>
+                    <input type="text" name="" id="" placeholder="Kart Numarası">
+                </div>
+                <div class="payment-info-expiry-date">
+                    <h3>Geçerlilik Tarihi</h3>
+                    <div class="payment-info-expiry-date-boxes">
+                        <div class="payment-info-expiry-date-month">
+                            <form action="">
+                                <select name="" id="">
+                                    <option value="Ocak">Ocak</option>
+                                    <option value="Subat">Şubat</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="payment-info-expiry-date-year">
+                            <form action="">
+                                <select name="" id="">
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="payment-info-expiry-date-payment-method">
+                            <img src="img/visa.png" alt="visa">
+                            <img src="img/amex.png" alt="american express">
+                            <img src="img/discover.png" alt="discover">
+                            <img src="img/mastercard.png" alt="master card">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-clarification-text">
+                <div class="payment-clarification-text-checkboxes">
+                    <div class="payment-clarification-text-rent-checkbox">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Biwatt <a href="#">Kiralama Koşulları ve Aydınlatma Metni'ni</a> okudum ve kabul
+                            ediyorum.</label>
+                    </div>
+                    <div class="payment-clarification-text-elucidating-checkbox">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Kişisel Verilerin İşlenmesi Hakkında Aydınlatma Metninde yer alan bilgilendirme ve
+                            amaçlar doğrultusunda, tarafınıza ticari elektronik ileti gönderilmesine onay veriyor
+                            musunuz? Dilediğiniz zaman tamamen veya ürün ve kanal bazında, veri, ses, görüntü vesair her
+                            türlü ileti gönderimini reddetme hakkına sahipsiniz.</label>
+                    </div>
+                </div>
+                <div class="payment-clarification-text-total-cost">
+                    <h1>Toplam Maliyet</h1>
+                    <h5>Hemen Öde Fiyatı ( Yakıt hariç KDV dahil )</h5>
+                    <div class="payment-clarification-text-pay-now">
+                        <input type="text" name="" id="" placeholder="1.715,00 ₺" readonly>
+                        <div class="payment-clarification-text-pay-now-button">
+                            <input type="submit" value="Şimdi Öde">
+                        </div>
+                    </div>
+                    <ul class="payment-clarification-text-pay-info">
+                        <li>Rezervasyounu yapılan aracın kiralama işlemi öncesinde ofislerimizde Findeks kredi
+                            sorgulaması ve risk değerlendirmesi yapılarak kiralama talebi değerlendirmeye alınır. Ön
+                            ödemeli yapılan rezervasyonlarda kredi limiti uygun görülmeyerek kiralama
+                            gerçekleştirilmediği takdirde müşteri tarafından önceden ödenen tutar iade edilir.</li>
+                        <li>Ödeme butonunun aktif hale gelmesi için tüm zorunlu bilgilerin eksiksiz tamamlanması
+                            gerekmektedir.</li>
+                        <li>Eksik bilgileri tamamladıktan sonra, “Okudum ve kabul ediyorum” işaretlemesini kaldırıp
+                            tekrar seçiniz.</li>
+                        <li>Bu site güvenli bir sunucu üzerindedir, tüm bilgileriniz şifrelenir.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="payment-right">
+            <div class="complete-booking">
+                <div class="complete-booking-button">
+                    <button type="submit">Rezervasyonu Tamamla</button>
+                    <h3>Seçiminiz</h3>
+                    <img src="img/otomobil.png" alt="Car">
+                </div>
+                <h4 class="complete-booking-car-name">Fiat Egea HB IMHR</h4>
+                <div class="complete-booking-rent-place">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Kiralama Yerleri</span>
+                </div>
+                <div class="complete-booking-taking-office">
+                    <h3>Alış Ofisi:</h3>
+                    <p>İstanbul Sabiha Gökçen Havalimanı</p>
+                </div>
+                <div class="complete-booking-taking-office">
+                    <h3>Alış Ofisi:</h3>
+                    <p>İstanbul Sabiha Gökçen Havalimanı</p>
+                </div>
+                <div class="complete-booking-taking-office">
+                    <h3>04.08.2023 13:00</h3>
+                    <p>İade Ofisi</p>
+                </div>
+                <div class="complete-booking-taking-office">
+                    <h3>05.08.2023 13:00</h3>
+                    <p>İstanbul Sabiha Gökçen Havalimanı</p>
+                </div>
+                <div class="complete-booking-price">
+                    <div class="complete-booking-price-row">
+                        <p class="complete-booking-price-col">Taban Fiyat</p>
+                        <p>1.1500,00 ₺</p>
+                    </div>
+                    <div class="complete-booking-price-row">
+                        <p class="complete-booking-price-col">Muafiyetli Hasar Sigortası</p>
+                        <p>Dahil</p>
+                    </div>
+                    <div class="complete-booking-price-row">
+                        <p class="complete-booking-price-col">Muafiyetli Hasar Sigortası</p>
+                        <p>Dahil</p>
+                    </div>
+                    <div class="complete-booking-price-row">
+                        <p class="complete-booking-price-col">400 Km / Gün</p>
+                        <p>Dahil</p>
+                    </div>
+                    <div class="complete-booking-price-row">
+                        <p class="complete-booking-price-col">Maksimum 400 Km / Kiralama</p>
+                        <p>Dahil</p>
+                    </div>
+                    <div class="complete-booking-price-row">
+                        <p class="complete-booking-price-col">7 / 24 Destek Müşteri Hizmetleri</p>
+                        <p>Dahil</p>
+                    </div>
+                    <div class="complete-booking-price-row">
+                        <p class="complete-booking-price-col">Teslim Hizmeti</p>
+                        <p>Dahil</p>
+                    </div>
+                    <div class="complete-booking-price-row">
+                        <p class="complete-booking-price-col">Basic</p>
+                        <p>Dahil</p>
+                    </div>
+                </div>
+                <div class="complete-booking-total-price">
+                    <div class="complete-booking-total-price-text">
+                        <h3>Toplam Fiyat</h3>
+                        <p>Hemen Öde Fiyatı ( Yakıt hariç KDV dahil )</p>
+                        <h3>1 Gün</h3>
+                    </div>
+                    <div class="complete-booking-total-price-amount">
+                        <p>1.150,00 ₺</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Payment -->
+
+    <!-- Footer -->
+    <div class="footer-background">
+        <div class="footer-field container">
+            <div class="footer-field-left">
+                <div class="footer-field-biwatt-logo">
+                    <img src="img/biwatt.logo.svg" alt="Biwatt Logo">
+                </div>
+                <p class="footer-field-biwatt-text">
+                    Biwatt, sadece elektrikli araçlar sunarak çevreye duyarlı sürüş deneyimi sağlar. Sıfır emisyonlu
+                    araçlarla şehirde hareket ederek çevreyi koruma fırsatı sunar.
+                </p>
+                <p class="footer-field-biwatt-copyright">biwatt &copy; 2023</p>
+            </div>
+            <div class="footer-field-right">
+                <div class="footer-field-right-col">
+                    <h3>Biwatt</h3>
+                    <a href="#">Nasıl Çalışır?</a>
+                    <a href="#">Neden Biz?</a>
+                </div>
+                <div class="footer-field-right-col">
+                    <h3>Genel Müdürlük</h3>
+                    <ul class="footer-field-right-contact">
+                        <li class="footer-field-right-contact-phone">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:02163798282">0216 379 82 82</a>
+                        </li>
+                        <li class="footer-field-right-contact-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>BiWatt orta mahallesi ankara caddesi no:2/1 e-5 kavşağı metro çıkışı karşısı tunalar
+                                plaza pendik / istanbul</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-field-right-col">
+                    <div class="footer-field-right-col-call-inquiry">
+                        <a href="#">Schedule a call</a>
+                        <a href="#">Submit an Inquiry</a>
+                    </div>
+                    <ul class="footer-field-right-social-links">
+                        <li class="footer-field-right-social-link">
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="footer-field-right-social-link">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="footer-field-right-social-link">
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="footer-field-right-social-link">
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="footer-field-right-social-link">
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer-field container">
+            <ul class="bottom-footer-links">
+                <li class="bottom-footer-link">
+                    <a href="#">Kurumsal</a>
+                </li>
+                <li class="bottom-footer-link">
+                    <a href="#">Elektrikli araçlar</a>
+                </li>
+                <li class="bottom-footer-link">
+                    <a href="#">Çözümler</a>
+                </li>
+                <li class="bottom-footer-link">
+                    <a href="#">Sıkça sorulan sorular</a>
+                </li>
+                <li class="bottom-footer-link">
+                    <a href="#">İletişim</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

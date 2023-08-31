@@ -17,6 +17,7 @@ body {
 }
 
 img {
+    display: block;
     max-width: 100%;
 }
 
@@ -818,6 +819,270 @@ body.open {
 
 /* End Blog Page */
 
+/* Payment */
+
+.payment {
+    padding: 1rem .5rem;
+}
+
+.payment h3 {
+    margin-bottom: .5rem;
+}
+
+.info-header {
+    padding-bottom: .5rem;
+    margin-top: 1.875rem;
+    margin-bottom: .5rem;
+    border-bottom: 1px solid #efefef;
+    background: var(--main-linear-color);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.driver-info .info-header {
+    margin-top: initial;
+}
+
+.driver-info-nationality,
+.driver-info-tc-no,
+.driver-info-name,
+.driver-info-name-surname,
+.driver-info-email-phoneno-birthdate,
+.driver-info-email,
+.driver-info-phoneno,
+.driver-info-address,
+.driver-info-country,
+.driver-info-country-city,
+.drive-info,
+.driver-info-trip-no,
+.payment-info-namesurname-ccv,
+.payment-info-namesurname,
+.payment-info-card-number,
+.payment-info-expiry-date-month,
+.payment-info-expiry-date-year {
+    margin-bottom: 1rem;
+}
+
+.payment input[type="text"],
+.payment select,
+.driver-info-exp textarea {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid #B8D6BF;
+    border-radius: 5px;
+    outline: none;
+}
+
+.payment-info-expiry-date-payment-method {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.payment-info-expiry-date-payment-method>* {
+    flex: 0 0 auto;
+    width: 20%;
+}
+
+.payment-info-expiry-date-payment-method img {
+    padding: .5rem;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+}
+
+.payment-info-expiry-date-payment-method img:nth-child(2) {
+    background-color: #1F72CD;
+}
+
+.payment-clarification-text {
+    background-color: #FAFAFA;
+}
+
+.payment-clarification-text-checkboxes {
+    padding: 1rem .5rem;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.payment-clarification-text-rent-checkbox label {
+    font-weight: 600;
+}
+
+.payment-clarification-text-rent-checkbox label a {
+    color: #047B17;
+}
+
+.payment-clarification-text-rent-checkbox {
+    margin-bottom: .5rem;
+}
+
+.payment-clarification-text-total-cost {
+    padding: 1rem .5rem;
+}
+
+.payment-clarification-text-total-cost h1,
+.payment-clarification-text-total-cost h5 {
+    margin-bottom: .5rem;
+}
+
+.payment-clarification-text-pay-now {
+    margin-bottom: 1rem;
+}
+
+.payment-clarification-text-pay-now input[type="text"] {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: .5rem;
+}
+
+.payment-clarification-text-pay-now input[type="text"]::placeholder {
+    color: #047B17;
+    font-weight: 900;
+}
+
+.payment-clarification-text-pay-now-button {
+    text-align: center;
+}
+
+.payment-clarification-text-pay-now-button input {
+    color: #fff;
+    background: var(--main-linear-color);
+    border: none;
+    outline: none;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+}
+
+.payment-clarification-text-pay-info li {
+    margin-bottom: 1rem;
+}
+
+.payment-clarification-text-pay-info li::before {
+    content: "\2022";
+    color: #047B17;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.payment-right {
+    margin-top: 2rem;
+}
+
+.complete-booking {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fafafa
+}
+
+.complete-booking-button {
+    padding-top: 1rem;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.complete-booking-button button {
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+    background: var(--main-linear-color);
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+}
+
+.complete-booking-button img {
+    display: block;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.complete-booking-car-name {
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.complete-booking-rent-place {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.complete-booking-rent-place i {
+    vertical-align: middle;
+    font-size: 1.17em;
+}
+
+.complete-booking-rent-place span {
+    font-weight: 700;
+    font-size: 1.17em;
+    vertical-align: middle;
+}
+
+.complete-booking-taking-office {
+    margin-bottom: .5rem;
+    padding: .5rem 0;
+}
+
+.complete-booking-taking-office:not(:nth-child(7)) {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.complete-booking-taking-office p {
+    color: #047B17;
+    font-weight: 700;
+}
+
+.complete-booking-taking-office h3 {
+    margin-bottom: initial;
+}
+
+.complete-booking-price {
+    padding: 1rem .5rem;
+    background-color: #f2f2f2;
+    margin-bottom: 1rem;
+}
+
+.complete-booking-price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.complete-booking-price-row:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.complete-booking-price-row p:last-child {
+    font-weight: 700;
+}
+
+.complete-booking-total-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: var(--main-linear-color);
+    color: #fff;
+    padding: 1rem .5rem;
+}
+
+.complete-booking-total-price-text p {
+    margin-bottom: .5rem;
+}
+
+.complete-booking-total-price-amount p {
+    font-size: 2em;
+    white-space: nowrap;
+}
+
+/* End Payment */
+
 /* Footer */
 
 .footer-background {
@@ -1321,6 +1586,12 @@ body.open {
         top: 10vh;
         background-color: #fff;
         box-shadow: rgba(100, 100, 111, 0.2) 0 5px 10px 0px;
+    }
+
+    .car-selection-steps {
+        position: sticky;
+        top: 10vh;
+        background-color: #fff;
     }
 
     .car-selection-steps-box {
