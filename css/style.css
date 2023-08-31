@@ -17,7 +17,6 @@ body {
 }
 
 img {
-    display: block;
     max-width: 100%;
 }
 
@@ -29,6 +28,11 @@ ul {
     list-style-type: none;
 }
 
+input[type="submit"],
+button {
+    cursor: pointer;
+}
+
 h1,
 h2,
 h3,
@@ -37,6 +41,129 @@ h5,
 h6 {
     font-family: 'Montserrat', sans-serif;
 }
+
+/* Custom Checkbox and Radio Button */
+
+.custom-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.custom-checkbox-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.custom-checkbox:hover input~.custom-checkbox-checkmark {
+    background-color: #ccc;
+}
+
+.custom-checkbox input:checked~.custom-checkbox-checkmark {
+    background: var(--main-linear-color);
+}
+
+.custom-checkbox-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input:checked~.custom-checkbox-checkmark:after {
+    display: block;
+}
+
+.custom-checkbox .custom-checkbox-checkmark:after {
+    left: 7px;
+    top: 2px;
+    width: 3px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom-radio-button {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    padding-top: 4px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.custom-radio-button input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.custom-radio-button-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background: #fff;
+    border: 1px solid #DBDBDB;
+    border-radius: 50%;
+}
+
+.custom-radio-button:hover input~.custom-radio-button-checkmark {
+    background-color: transparent;
+}
+
+.custom-radio-button input:checked~.custom-radio-button-checkmark {
+    background-color: transparent;
+}
+
+.custom-radio-button-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-radio-button input:checked~.custom-radio-button-checkmark:after {
+    display: block;
+}
+
+.custom-radio-button .custom-radio-button-checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--main-linear-color);
+}
+
+/* End Custom Checkbox and Radio Button */
 
 /* Hamburger */
 .biwatt-mobile-hamburger .line {
@@ -572,67 +699,6 @@ body.open {
     background: var(--main-linear-color);
 }
 
-/* Customize the label (the container) */
-.car-selection-filter-checkbox {
-    display: block;
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.car-selection-filter-checkbox input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-.car-selection-filter-checkbox-checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: #eee;
-    border-radius: 5px;
-}
-
-.car-selection-filter-checkbox:hover input~.car-selection-filter-checkbox-checkmark {
-    background-color: #ccc;
-}
-
-.car-selection-filter-checkbox input:checked~.car-selection-filter-checkbox-checkmark {
-    background: var(--main-linear-color);
-}
-
-.car-selection-filter-checkbox-checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-.car-selection-filter-checkbox input:checked~.car-selection-filter-checkbox-checkmark:after {
-    display: block;
-}
-
-.car-selection-filter-checkbox .car-selection-filter-checkbox-checkmark:after {
-    left: 7px;
-    top: 2px;
-    width: 3px;
-    height: 10px;
-    border: solid #fff;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
 /* End Car Selection */
 
 /* Car Features */
@@ -829,14 +895,29 @@ body.open {
     margin-bottom: .5rem;
 }
 
+.payment-left {
+    overflow: hidden;
+}
+
 .info-header {
+    position: relative;
     padding-bottom: .5rem;
     margin-top: 1.875rem;
     margin-bottom: .5rem;
-    border-bottom: 1px solid #efefef;
     background: var(--main-linear-color);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    width: fit-content;
+}
+
+.info-header::before {
+    content: "";
+    position: absolute;
+    width: 1000%;
+    height: 1px;
+    top: 100%;
+    left: 0;
+    background-color: #efefef;
 }
 
 .driver-info .info-header {
@@ -955,6 +1036,7 @@ body.open {
     outline: none;
     padding: .5rem 1rem;
     border-radius: 10px;
+    font-weight: 600;
 }
 
 .payment-clarification-text-pay-info li {
@@ -994,6 +1076,7 @@ body.open {
     color: #fff;
     border-radius: 5px;
     margin-bottom: .5rem;
+    font-weight: 600;
 }
 
 .complete-booking-button img {
@@ -1026,7 +1109,7 @@ body.open {
 
 .complete-booking-taking-office {
     margin-bottom: .5rem;
-    padding: .5rem 0;
+    padding: .5rem;
 }
 
 .complete-booking-taking-office:not(:nth-child(7)) {
@@ -1078,6 +1161,7 @@ body.open {
 
 .complete-booking-total-price-amount p {
     font-size: 2em;
+    font-weight: 700;
     white-space: nowrap;
 }
 
@@ -1304,6 +1388,31 @@ body.open {
 
     .swiper-pagination-bullet {
         border-width: 3px;
+    }
+
+    .payment {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .payment>* {
+        flex: 0 0 auto;
+        width: calc(50% - 2rem);
+    }
+
+    .driver-info-nationality-radio-buttons {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .payment-right {
+        margin-top: initial;
+    }
+
+    .complete-booking-button img {
+        margin: 0 auto;
     }
 }
 
@@ -1639,6 +1748,131 @@ body.open {
     }
 
     .blog-page-box-text {
+        padding: 1rem;
+    }
+
+    .payment {
+        gap: 5rem;
+    }
+
+    .info-header {
+        margin-bottom: 2rem;
+    }
+
+    .payment .payment-left {
+        width: calc(60% - 5rem);
+    }
+
+    .payment .payment-right {
+        width: calc(40% - 5rem);
+    }
+
+    .payment input[type="text"],
+    .payment select,
+    .driver-info-exp textarea {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .driver-info-name-surname {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .driver-info-name-surname>* {
+        width: 50%;
+    }
+
+    .driver-info-name {
+        margin-bottom: initial;
+    }
+
+    .driver-info-email-phoneno-birthdate {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .driver-info-email-phoneno-birthdate>* {
+        width: 33.3333%;
+    }
+
+    .driver-info-country-city {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .driver-info-country-city>* {
+        width: 50%;
+    }
+
+    .payment-info-namesurname-ccv {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .payment-info-namesurname-ccv>* {
+        width: 50%;
+    }
+
+    .payment-info-expiry-date-boxes {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .payment-info-expiry-date-boxes>* {
+        width: 33.33333%;
+    }
+
+    .payment-clarification-text-pay-now {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .payment-clarification-text-pay-now>* {
+        width: 50%;
+    }
+
+    .payment-clarification-text-pay-now-button input {
+        width: 100%;
+        padding: 1rem 1.5rem;
+        font-size: 1.2rem;
+        border-radius: 30px;
+    }
+
+    .payment-clarification-text-total-cost,
+    .payment-clarification-text-checkboxes {
+        padding: 2rem 3rem;
+    }
+
+    .payment {
+        padding: 3rem .5rem;
+    }
+
+    .payment-clarification-text-pay-now input[type="text"] {
+        font-size: 1.2rem;
+    }
+
+    .complete-booking-button button {
+        width: 60%;
+        font-size: 1.2rem;
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+    }
+
+    .complete-booking-taking-office {
+        padding: 1rem;
+    }
+
+    .complete-booking-button {
+        padding-top: 2rem;
+    }
+
+    .complete-booking-price {
+        padding: 1rem;
+    }
+
+    .complete-booking-total-price {
         padding: 1rem;
     }
 }

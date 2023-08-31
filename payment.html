@@ -108,20 +108,26 @@
     <!-- Car Selection -->
 
     <!-- Payment -->
-    <div class="payment">
+    <div class="payment container">
         <div class="payment-left">
             <div class="driver-info">
                 <h1 class="info-header">Sürücü Bilgileri</h1>
                 <div class="driver-info-nationality">
                     <h3>Uyruk*</h3>
-                    <div class="driver-info-nationality-radio-button">
-                        <div class="driver-info-nationality-radio-button-tc">
-                            <input type="radio" name="" id="">
-                            <label for="">T.C.</label>
+                    <div class="driver-info-nationality-radio-buttons">
+                        <div class="driver-info-nationality-radio-buttons-tc">
+                            <label class="custom-radio-button">
+                                <input type="checkbox" checked="checked">
+                                <span class="custom-radio-button-checkmark"></span>
+                                T.C.
+                            </label>
                         </div>
-                        <div class="driver-info-nationality-radio-button-tc">
-                            <input type="radio" name="" id="">
-                            <label for="">Diğer</label>
+                        <div class="driver-info-nationality-radio-buttons-other">
+                            <label class="custom-radio-button">
+                                <input type="checkbox">
+                                <span class="custom-radio-button-checkmark"></span>
+                                Diğer
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -238,16 +244,22 @@
             <div class="payment-clarification-text">
                 <div class="payment-clarification-text-checkboxes">
                     <div class="payment-clarification-text-rent-checkbox">
-                        <input type="checkbox" name="" id="">
-                        <label for="">Biwatt <a href="#">Kiralama Koşulları ve Aydınlatma Metni'ni</a> okudum ve kabul
-                            ediyorum.</label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox">
+                            <span class="custom-checkbox-checkmark"></span>
+                            Biwatt <a href="#">Kiralama Koşulları ve Aydınlatma Metni'ni</a> okudum ve kabul
+                            ediyorum.
+                        </label>
                     </div>
                     <div class="payment-clarification-text-elucidating-checkbox">
-                        <input type="checkbox" name="" id="">
-                        <label for="">Kişisel Verilerin İşlenmesi Hakkında Aydınlatma Metninde yer alan bilgilendirme ve
+                        <label class="custom-checkbox">
+                            <input type="checkbox">
+                            <span class="custom-checkbox-checkmark"></span>
+                            Kişisel Verilerin İşlenmesi Hakkında Aydınlatma Metninde yer alan bilgilendirme ve
                             amaçlar doğrultusunda, tarafınıza ticari elektronik ileti gönderilmesine onay veriyor
                             musunuz? Dilediğiniz zaman tamamen veya ürün ve kanal bazında, veri, ses, görüntü vesair her
-                            türlü ileti gönderimini reddetme hakkına sahipsiniz.</label>
+                            türlü ileti gönderimini reddetme hakkına sahipsiniz.
+                        </label>
                     </div>
                 </div>
                 <div class="payment-clarification-text-total-cost">
