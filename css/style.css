@@ -1049,7 +1049,6 @@ body.open {
     font-weight: bold;
     display: inline-block;
     width: 1em;
-    margin-left: -1em;
 }
 
 .payment-right {
@@ -1701,7 +1700,7 @@ body.open {
         position: sticky;
         top: 10vh;
         background-color: #fff;
-		z-index: 1;
+        z-index: 1;
     }
 
     .car-selection-steps-box {
@@ -1852,6 +1851,10 @@ body.open {
 
     .payment-clarification-text-pay-now input[type="text"] {
         font-size: 1.2rem;
+    }
+
+    .payment-clarification-text-pay-info li::before {
+        margin-left: -1em;
     }
 
     .complete-booking-button button {
