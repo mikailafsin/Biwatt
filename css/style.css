@@ -1176,7 +1176,7 @@ body.open {
 .additional-services-box {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: #FAFAFA;
     margin-bottom: 1rem;
     padding: 1rem .5rem;
