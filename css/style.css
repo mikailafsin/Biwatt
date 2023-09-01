@@ -306,9 +306,24 @@ body.open {
 
 /* Rent Field */
 .rent-background {
+    position: relative;
     background-image: url("../img/rent.background.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.rent-field-leaf-left {
+    position: absolute;
+    left: 20%;
+    top: 70%;
+    transform: translate(-20%, -70%);
+}
+
+.rent-field-leaf-right {
+    position: absolute;
+    right: 5%;
+    top: 60%;
+    transform: translate(5%, -60%);
 }
 
 .rent-field {
@@ -535,7 +550,15 @@ body.open {
 }
 
 .how-does-it-work-img {
+    position: relative;
     text-align: center;
+}
+
+.how-does-it-work-leaf {
+    position: absolute;
+    left: -5%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* How does it work ? */
@@ -551,8 +574,29 @@ body.open {
 }
 
 .application-text {
+    position: relative;
     margin-bottom: 1rem;
 }
+
+.application-field-left-dot:nth-child(3) {
+    position: absolute;
+    left: 20%;
+    bottom: -70%;
+    transform: translate(-20%, -70%);
+}
+
+.application-field-left-dot:nth-child(4) {
+    position: absolute;
+    right: 0;
+    top: -20%;
+    transform: translate(-20%, -70%);
+}
+
+.rent-field-leaf-left,
+.rent-field-leaf-right,
+.how-does-it-work-leaf,
+.application-field-left-dot,
+.application-field-right-dot {}
 
 .application-text h1 {
     color: #fff;
@@ -563,6 +607,16 @@ body.open {
 
 .application-text p {
     color: #fff;
+}
+
+.application-img {
+    position: relative;
+}
+
+.application-field-right-dot {
+    position: absolute;
+    right: 0;
+    bottom: 0
 }
 
 /* End Application Field */
@@ -2139,6 +2193,14 @@ body.open {
     .additional-services-box-col-amount {
         width: 30px;
         height: 30px;
+    }
+
+    .rent-field-leaf-left,
+    .rent-field-leaf-right,
+    .how-does-it-work-leaf,
+    .application-field-left-dot,
+    .application-field-right-dot {
+        display: block;
     }
 }
 
