@@ -99,8 +99,6 @@ h6 {
     height: 10px;
     border: solid #fff;
     border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
@@ -172,8 +170,6 @@ h6 {
     background-image: var(--main-linear-color);
     display: block;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -182,29 +178,34 @@ h6 {
 }
 
 #hamburger {
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
 #hamburger.is-active {
+    -webkit-animation: smallbig 0.6s forwards;
     animation: smallbig 0.6s forwards;
+}
+
+@-webkit-keyframes smallbig {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0);
+    }
 }
 
 @keyframes smallbig {
 
     0%,
     100% {
-        -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-        -o-transform: scale(1);
         transform: scale(1);
     }
 
     50% {
-        -webkit-transform: scale(0);
-        -ms-transform: scale(0);
-        -o-transform: scale(0);
         transform: scale(0);
     }
 }
@@ -212,8 +213,6 @@ h6 {
 #hamburger.is-active .line:nth-child(1),
 #hamburger.is-active .line:nth-child(2),
 #hamburger.is-active .line:nth-child(3) {
-    -webkit-transition-delay: 0.2s;
-    -o-transition-delay: 0.2s;
     transition-delay: 0.2s;
 }
 
@@ -222,16 +221,10 @@ h6 {
 }
 
 #hamburger.is-active .line:nth-child(1) {
-    -webkit-transform: translateY(8px) rotate(45deg);
-    -ms-transform: translateY(8px) rotate(45deg);
-    -o-transform: translateY(8px) rotate(45deg);
     transform: translateY(8px) rotate(45deg);
 }
 
 #hamburger.is-active .line:nth-child(3) {
-    -webkit-transform: translateY(-8px) rotate(-45deg);
-    -ms-transform: translateY(-8px) rotate(-45deg);
-    -o-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg);
 }
 
@@ -416,6 +409,26 @@ body.open {
     text-align: center;
 }
 
+.rent-field-box-location input::-webkit-input-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.rent-field-box-location input::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.rent-field-box-location input:-ms-input-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.rent-field-box-location input::-ms-input-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
 .rent-field-box-location input::placeholder {
     color: #fff;
     opacity: 1;
@@ -427,6 +440,14 @@ body.open {
 
 .rent-field-box-location input::-ms-input-placeholder {
     color: #fff;
+}
+
+.rent-field-leaf-left,
+.rent-field-leaf-right,
+.how-does-it-work-leaf,
+.application-field-left-dot,
+.application-field-right-dot {
+    display: none;
 }
 
 /* End Rent Field */
@@ -801,6 +822,7 @@ body.open {
 .car-features-price-box:nth-child(2) {
     padding: 0 1rem;
     border: 1px solid transparent;
+    -o-border-image: var(--main-linear-color) 10;
     border-image: var(--main-linear-color) 10;
 }
 
@@ -852,6 +874,7 @@ body.open {
     display: block;
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -928,6 +951,8 @@ body.open {
 .blog-page-show-more-button {
     margin-top: 1.5rem;
     display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin-inline: auto;
     padding: .5rem 1rem;
@@ -964,6 +989,8 @@ body.open {
     background: var(--main-linear-color);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -1076,6 +1103,26 @@ body.open {
     border: none;
     outline: none;
     margin-bottom: .5rem;
+}
+
+.payment-clarification-text-pay-now input[type="text"]::-webkit-input-placeholder {
+    color: #047B17;
+    font-weight: 900;
+}
+
+.payment-clarification-text-pay-now input[type="text"]::-moz-placeholder {
+    color: #047B17;
+    font-weight: 900;
+}
+
+.payment-clarification-text-pay-now input[type="text"]:-ms-input-placeholder {
+    color: #047B17;
+    font-weight: 900;
+}
+
+.payment-clarification-text-pay-now input[type="text"]::-ms-input-placeholder {
+    color: #047B17;
+    font-weight: 900;
 }
 
 .payment-clarification-text-pay-now input[type="text"]::placeholder {
@@ -1706,6 +1753,7 @@ body.open {
     }
 
     .biwatt-desktop-header {
+        position: -webkit-sticky;
         position: sticky;
         top: 0;
         background-color: #fff;
@@ -1944,6 +1992,7 @@ body.open {
     }
 
     .car-selection-steps-and-filters {
+        position: -webkit-sticky;
         position: sticky;
         top: 10vh;
         background-color: #fff;
@@ -1951,6 +2000,7 @@ body.open {
     }
 
     .car-selection-steps {
+        position: -webkit-sticky;
         position: sticky;
         top: 10vh;
         background-color: #fff;
