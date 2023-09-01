@@ -339,12 +339,12 @@ body.open {
     padding: 1rem 2rem;
     border-radius: 2em;
     margin-bottom: 1rem;
-    width: 80%;
-    max-width: 80%;
+    width: 95%;
+    max-width: 95%;
 }
 
 .rent-field-box-row {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .rent-field-box-acceptence-return {
@@ -378,10 +378,11 @@ body.open {
 }
 
 .rent-field-box-date-time {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
+    text-align: center;
+}
+
+.rent-field-box-date-time>* {
+    margin-bottom: .5rem;
 }
 
 .rent-field-rentbutton {
@@ -1746,6 +1747,14 @@ body.open {
         right: 0;
         bottom: -30%;
         font-size: 1.2rem;
+    }
+
+    .rent-field-box-date-time {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        text-align: initial;
     }
 
     .biwatt-mobile-header {
